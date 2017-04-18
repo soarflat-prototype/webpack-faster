@@ -57,6 +57,4 @@ module.exports = {
       threads: 4,
     }),
   ],
-
-  stats: 'verbose',
 };
