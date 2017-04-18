@@ -4,7 +4,7 @@ const HappyPack = require('happypack');
 
 module.exports = {
   entry: {
-    'app': ['./src/app.js'],
+    app: './src/app.js',
   },
 
   output: {
@@ -18,7 +18,7 @@ module.exports = {
       // ローダーの処理対象ファイル
       test: /\.js$/,
       // ローダーの処理対象から外すディレクトリ
-      exclude: /node_modules/,
+      exclude: /node_modules|\.happypack/,
       // 利用するローダー
       use: [{
         loader: 'happypack/loader?id=js',
@@ -57,4 +57,6 @@ module.exports = {
       threads: 4,
     }),
   ],
+
+  stats: 'verbose',
 };

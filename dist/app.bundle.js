@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -79,15 +79,53 @@ module.exports = vendor;
 "use strict";
 
 
-var _jquery = __webpack_require__(3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = moduleA;
+function moduleA() {
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+  console.log('moduleA');
+}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(0);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(1);
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(2);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _velocityAnimate = __webpack_require__(4);
+var _velocityAnimate = __webpack_require__(3);
 
 var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
 
-var _moduleA = __webpack_require__(2);
+var _moduleA = __webpack_require__(1);
 
 var _moduleA2 = _interopRequireDefault(_moduleA);
 
@@ -101,43 +139,6 @@ var $app = (0, _jquery2.default)('.app');
     (0, _moduleA2.default)();
   }
 });
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = moduleA;
-function moduleA() {
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-}
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(0);
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(1);
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(1);
-
 
 /***/ })
 /******/ ]);
