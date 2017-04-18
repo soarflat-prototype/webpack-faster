@@ -1,0 +1,13 @@
+{
+  "name": "vendor",
+  "content": {
+    "./node_modules/jquery/dist/jquery.js": {
+      "id": 0,
+      "meta": {}
+    },
+    "./node_modules/velocity-animate/velocity.js": {
+      "id": 1,
+      "meta": {}
+    }
+  }
+}
