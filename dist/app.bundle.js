@@ -85,17 +85,6 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = moduleA;
 function moduleA() {
   console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
-  console.log('moduleA');
 }
 
 /***/ }),
