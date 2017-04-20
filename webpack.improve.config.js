@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HappyPack = require('happypack');
 
 module.exports = {
   entry: {
@@ -20,11 +21,7 @@ module.exports = {
       exclude: /node_modules|\.happypack/,
       // 利用するローダー
       use: [{
-        loader: 'babel-loader',
-        query: {
-          cacheDirectory: true,
-          presets: ['es2015'],
-        },
+        loader: 'happypack/loader?id=js',
       }],
     }],
   },
@@ -36,6 +33,17 @@ module.exports = {
        * manifestファイルをロードして渡す
        */
       manifest: require('./dist/vendor-manifest.json'),
+    }),
+    new HappyPack({
+      id: 'js',
+      loaders: [{
+        loader: 'babel-loader',
+        query: {
+          cacheDirectory: true,
+          presets: ['es2015'],
+        },
+      }],
+      threads: 4,
     }),
   ],
 };

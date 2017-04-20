@@ -2,9 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  module: {
-    noParse: /jquery|velocity-animate/,
-  },
   entry: {
     vendor: ['jquery', 'velocity-animate'],
   },
